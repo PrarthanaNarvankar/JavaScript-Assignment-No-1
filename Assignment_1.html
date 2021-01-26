@@ -1,0 +1,85 @@
+<html>
+  <head> 
+    
+  </head>
+  <body>
+    <!-- Q1)What will the code below  output to the console and why?
+    console.log(1 + "2" + "2");
+    console.log(1 + +"2" + "2");
+    console.log(1+ -"1" + "2");
+    console.log(+"1" + "1" + "2");
+    console.log("A" - "B" + "2");
+    console.log("A" - "B" + 2); -->
+
+    <!-- Q2)You are given a variable "marks".Your task is to print:
+    console.log("A" - "B" + 2); 
+    -AA if the mark is greater than 90
+    -AB if the mark is greater than 80 and less than or equal to 90
+    -BB if the mark is greater than 70 and less than or equal to 80
+    -BC if the mark is greater than 60 and less than or equal to 70
+    -CC if the mark is greater than 50 and less than or equal to 60
+    -CD if the mark is greater than 40 and less than or equal to 50
+    -DD if the mark is greater than 30 and less than or equal to 40
+    -FF if the mark is less than or equal to 30  -->
+
+    <script>
+
+    // Question 1:
+
+      console.log(1 + "2" + "2");
+      /* Ans:: Output on console is 122. As it concat the string so output is 122 because
+          1,2 and 2 are strings    */
+
+      console.log(1 + +"2" + "2");
+     /* Ans:: Output on console is 32. As the 2nd plus(+) makes 2 as string to a integer,
+           but the second 2 is string,so it makes 32 as output.  */
+
+      console.log(1+ -"1" + "2");
+    /* Ans:: Output on console is 02.As the 2nd minus(-) makes 1 as string to integer,
+            but second 2 is string.So the output is 02. */
+         
+     console.log(+"1" + "1" + "2");
+     /* Ans:: Output on console is 112.As the first minus(-) makes  1 as string to 
+              integer,and then they concat the string. */
+
+    console.log("A" - "B" + "2");
+    /* Ans:: Output on console is NaN2 .As the - cannot be used for string values.Nor 
+            this find A - B is NaN and adding 2 as string.   */
+    
+     console.log("A" - "B" + 2); 
+    /* Ans:: Output on console is NaN. When we add NaN with an integer it gives NaN as 
+            output. */
+    
+    // Question 2:
+
+     var marks=85;
+
+     if(marks>90){
+         console.log("Your Grade is AA");
+     }
+     else if(marks>80 && marks<=90){
+        console.log("Your Grade is AB");
+     }
+     else if(marks>70 && marks<=80){
+        console.log("Your Grade is BB");
+     }
+     else if(marks>60 && marks<=70){
+        console.log("Your Grade is BC");
+     }
+     else if(marks>50 && marks<=60){
+        console.log("Your Grade is CC");
+     }
+     else if(marks>40 && marks<=50){
+        console.log("Your Grade is CD");
+     }
+     else if(marks>30 && marks<=40){
+        console.log("Your Grade is DD");
+     }
+     else if(marks<=30){
+        console.log("Your Grade is FF");
+     }    
+
+
+    </script>
+  </body>
+</html>
